@@ -21,6 +21,8 @@
 
             chrome.contextMenus.removeAll(function () {
 
+                // contexts: [all, page, frame, selection, link, editable, image, video, audio, launcher, browser_action, page_action]
+
                 // Menu de contexto para criação randomica de usuários e dados 
                 // de usuários:
 
