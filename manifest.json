@@ -11,14 +11,26 @@
     },
     "permissions": [
         "contextMenus",
+        "tabs",
         "http://*/*",
         "https://*/*"
     ],
-    "background": {
+    "background": {        
         "scripts": [
-            "jquery-3.3.1.min.js",
+            "jquery.js",
             "extension.js",
-            "main.js"
+            "background.js"
         ]
-    }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
 }
